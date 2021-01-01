@@ -29,12 +29,28 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Arsha - v3.0.3
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+  	.card{
+ 
+   
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+ 
+  cursor: pointer;
+
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.image2{
+	  max-height: 150px; 
+	  max-width: 150px;
+}
+ 
+  </style>
 </head>
 
 <body>
@@ -52,10 +68,10 @@
          
           <li><a href="#about">About us</a></li>
           <li><a href="#Services">Services</a></li>
-          <li><a href="#portfolio">our products</a></li>
+          <li><a href="#products">our products</a></li>
           <li><a href="#team">our team</a></li>
 		   <li class="active"><a href="index.html">Home </a></li>
-          <li class="drop-down"><a href="">others</a>
+         <!-- <li class="drop-down"><a href="">others</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="drop-down"><a href="#">Deep Drop Down</a>
@@ -86,35 +102,53 @@
 
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+ 
+
+
+<section id="hero" class="d-flex align-items-center">
 
     <div class="container">
-	
-	 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/48-487797_awesome-medical-free-wallpaper-id-medical-hd-wallpaper.jpg" class="img-fluid animated" alt="">
-        </div>
-		  <h1>one of the best companies in the world</h1>
+      <div class="row">
+
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>one of the best companies in the world</h1>
           <h2>Alfahad pharma  Company was 
 			established in 1970 as a private family company in the Republic of Yemen</h2>
-		  <h2> </h2>
-      <div class="row">
-	
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-        
-        
-        </div>
        
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/bg-home.webp" class="img-fluid animated" alt="">
+        </div>
+        
       </div>
     </div>
 
-  </section><!-- End Hero -->
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= Cliens Section ======= -->
-	<h2> our loyal customers</h2>
+ <div class="section-title" style="margin-top: 20px;">
+          <h2>our loyal customers</h2>
+        </div>
     <section id="cliens" class="cliens section-bg">
+
       <div class="container">
+      	 
 
         <div class="row" data-aos="zoom-in">
 
@@ -148,6 +182,20 @@
 
       </div>
     </section><!-- End Cliens Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -236,7 +284,7 @@
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/fds.jpg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/dd.jpeg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
@@ -311,18 +359,15 @@
               <h4><a href="">import</a></h4>
               <p>
 Import
-We are importing medicines To Yemen since 2000 . We have a good connection with  so many exporters in many Countries (India , Turkey , Eygpt , Pakistan , KSA , etc..)</p>
+We are importing medicines To Yemen since 2000 . We have a good connection with  so many exporters in 
+many Countries (India , Turkey , Eygpt , Pakistan , KSA , etc..) ,Also 
+ We are shipping Medicines from any country to Yemen or shipping within Yemen in a fast and reliable time and affordable prices
+ </p>
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Logistic Transportation
-</a></h4>
-              <p>We are  shipping Medicines from any country to Yemen or shipping within Yemen in a fast and reliable time and affordable prices</p>
-            </div>
-          </div>
+        
+		  
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
@@ -362,124 +407,165 @@ We are importing medicines To Yemen since 2000 . We have a good connection with 
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="products" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>products</h2>
-          <p>our best products</p>
+          <h2>our Products</h2>
+          <p>  </p>
         </div>
 
-        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">all</li>
-          <li data-filter=".filter-app">details</li>
-          <li data-filter=".filter-card">card</li>
-          <li data-filter=".filter-web">web</li>
-        </ul>
+        <div class="row">
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/6160.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/6160.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-lg-3">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/tables-and-capsules-strip1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Tablets and capsules .</h4>
+         
+		 
+      
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/download (1).jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/download (1).jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="col-lg-3">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/download (2).jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Injectables </h4>
+               
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/download2.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/download2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+             <div class="col-lg-3">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/download (2).jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Syrup and suspensions 
+</h4>
+                
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/download.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/download.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+		  
+		         <div class="col-lg-3">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/drops.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Drops
+</h4>
+                
+              </div>
             </div>
           </div>
+		  
+		  
+		  
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/fdascancerdr.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/fdascancerdr.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/WP_MEDICAL.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/WP_MEDICAL.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/drugs-medication.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/drugs-medication.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/1-578.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/1-578.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/sa.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/sa.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-			    <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/sa.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+             <div class="col-lg-3">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/download (4).jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Cream and ointments 
+ </h4>
+               
             </div>
           </div>
 
         </div>
+		
+		
+      
+		
+		
+		
+		
+		          <div class="col-lg-3">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/rr.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Medical Appliances
+ </h4>
+               
+            </div>
+          </div>
+
+        </div>
+		       <div class="col-lg-3">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src="assets/img/file_e8375.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>other medicals
+ </h4>
+               
+            </div>
+          </div>
+
+        </div>
+		
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
